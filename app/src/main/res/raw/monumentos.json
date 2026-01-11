@@ -1,0 +1,164 @@
+[
+  {
+    "titulo": "La Torre Eiffel",
+    "descripcion": "Símbolo indiscutible de París, esta estructura de hierro de 300 metros fue construida por Gustave Eiffel para la Exposición Universal de 1889.",
+    "ruta_imagen": "torre_eiffel",
+    "pais": "Francia"
+  },
+  {
+    "titulo": "El Coliseo Romano",
+    "descripcion": "El anfiteatro más grande jamás construido por el Imperio Romano, inaugurado en el año 80 d.C., donde se celebraban luchas de gladiadores.",
+    "ruta_imagen": "coliseo_romano",
+    "pais": "Italia"
+  },
+  {
+    "titulo": "La Sagrada Familia",
+    "descripcion": "La obra maestra inacabada de Antoni Gaudí en Barcelona; una basílica única que fusiona el estilo gótico y curvilineo del Art Nouveau.",
+    "ruta_imagen": "sagrada_familia",
+    "pais": "España"
+  },
+  {
+    "titulo": "La Alhambra",
+    "descripcion": "Un impresionante complejo palaciego y fortaleza en Granada, considerado la cumbre del arte andalusí en la Península Ibérica.",
+    "ruta_imagen": "alhambra",
+    "pais": "España"
+  },
+  {
+    "titulo": "La Acrópolis de Atenas",
+    "descripcion": "Ciudadela antigua que contiene los restos de varios edificios de gran importancia arquitectónica e histórica, siendo el más famoso el Partenón.",
+    "ruta_imagen": "acropolis_atenas",
+    "pais": "Grecia"
+  },
+  {
+    "titulo": "Stonehenge",
+    "descripcion": "Un misterioso monumento megalítico del Neolítico, famoso por su alineación con el solsticio y cuyo método de construcción sigue siendo debatido.",
+    "ruta_imagen": "stonehenge",
+    "pais": "Reino Unido"
+  },
+  {
+    "titulo": "Catedral de San Basilio",
+    "descripcion": "Icono de la Plaza Roja de Moscú, famosa por sus coloridas cúpulas en forma de bulbo que parecen sacadas de un cuento de hadas.",
+    "ruta_imagen": "catedral_san_basilio",
+    "pais": "Rusia"
+  },
+  {
+    "titulo": "Torre de Pisa",
+    "descripcion": "El campanario de la catedral de Pisa, mundialmente conocido por su inclinación involuntaria causada por cimientos inestables.",
+    "ruta_imagen": "torre_pisa",
+    "pais": "Italia"
+  },
+  {
+    "titulo": "Santa Sofía",
+    "descripcion": "Originalmente una basílica ortodoxa, luego mezquita y ahora lugar de culto en Estambul, famosa por su inmensa cúpula bizantina.",
+    "ruta_imagen": "basilica_santa_sofia",
+    "pais": "Turquía"
+  },
+  {
+    "titulo": "Castillo de Neuschwanstein",
+    "descripcion": "Un castillo de estilo románico del siglo XIX en Baviera que inspiró el famoso castillo de la Bella Durmiente de Disney.",
+    "ruta_imagen": "castillo_neuschwanstein",
+    "pais": "Alemania"
+  },
+  {
+    "titulo": "Big Ben / Elizabeth Tower",
+    "descripcion": "La icónica torre del reloj del Palacio de Westminster en Londres, símbolo de la puntualidad y elegancia británica.",
+    "ruta_imagen": "big_ben",
+    "pais": "Reino Unido"
+  },
+  {
+    "titulo": "La Gran Muralla China",
+    "descripcion": "Una antigua serie de fortificaciones de miles de kilómetros construida para proteger al imperio chino de las invasiones nómadas.",
+    "ruta_imagen": "muralla_china",
+    "pais": "China"
+  },
+  {
+    "titulo": "Taj Mahal",
+    "descripcion": "Un inmenso mausoleo de mármol blanco construido en el siglo XVII por el emperador Shah Jahan en memoria de su esposa favorita.",
+    "ruta_imagen": "taj_mahal",
+    "pais": "India"
+  },
+  {
+    "titulo": "Petra",
+    "descripcion": "Conocida como la 'Ciudad Rosa', es un enclave arqueológico famoso por sus templos excavados directamente en la roca arenisca.",
+    "ruta_imagen": "petra",
+    "pais": "Jordania"
+  },
+  {
+    "titulo": "Angkor Wat",
+    "descripcion": "El monumento religioso más grande del mundo, originalmente un templo hindú y luego budista, símbolo nacional de Camboya.",
+    "ruta_imagen": "angkor_wat",
+    "pais": "Camboya"
+  },
+  {
+    "titulo": "Ciudad Prohibida",
+    "descripcion": "El complejo palaciego más grande del mundo, residencia de los emperadores chinos durante casi 500 años en el corazón de Pekín.",
+    "ruta_imagen": "ciudad_prohibida",
+    "pais": "China"
+  },
+  {
+    "titulo": "Burj Khalifa",
+    "descripcion": "Con 828 metros de altura, es actualmente la estructura más alta creada por el ser humano, símbolo de la ingeniería moderna en Dubái.",
+    "ruta_imagen": "burj_khalifa",
+    "pais": "Emiratos Árabes Unidos"
+  },
+  {
+    "titulo": "Kinkaku-ji / Pabellón Dorado",
+    "descripcion": "Un templo zen en Kioto cuyos pisos superiores están completamente cubiertos con hojas de oro puro.",
+    "ruta_imagen": "kinkaku",
+    "pais": "Japón"
+  },
+  {
+    "titulo": "Machu Picchu",
+    "descripcion": "Una antigua ciudad inca del siglo XV ubicada en lo alto de los Andes, que permaneció oculta al mundo exterior hasta 1911.",
+    "ruta_imagen": "machu_picchu",
+    "pais": "Perú"
+  },
+  {
+    "titulo": "Chichén Itzá",
+    "descripcion": "Una de las ciudades mayas más importantes, famosa por la pirámide de Kukulcán, que demuestra los avanzados conocimientos astronómicos mayas.",
+    "ruta_imagen": "chichen_itza",
+    "pais": "México"
+  },
+  {
+    "titulo": "Estatua de la Libertad",
+    "descripcion": "Regalo de Francia a los Estados Unidos en 1886, se erige en Nueva York como símbolo universal de libertad y democracia.",
+    "ruta_imagen": "estatua_libertad",
+    "pais": "EE. UU."
+  },
+  {
+    "titulo": "Cristo Redentor",
+    "descripcion": "Una colosal estatua de estilo Art Déco de Jesús de Nazaret con los brazos abiertos que domina la ciudad de Río de Janeiro.",
+    "ruta_imagen": "cristo_redentor",
+    "pais": "Brasil"
+  },
+  {
+    "titulo": "Golden Gate",
+    "descripcion": "El puente colgante más famoso del mundo, icono de San Francisco por su característico color 'naranja internacional'.",
+    "ruta_imagen": "golden_gate",
+    "pais": "EE. UU."
+  },
+  {
+    "titulo": "Moáis de la Isla de Pascua",
+    "descripcion": "Cerca de 1.000 estatuas monumentales de piedra (moáis) creadas por los habitantes Rapa Nui, envueltas en misterio.",
+    "ruta_imagen": "moasis_isla_pascua",
+    "pais": "Chile"
+  },
+  {
+    "titulo": "Las Pirámides de Giza",
+    "descripcion": "Las tumbas de los faraones Keops, Kefrén y Micerino; la Gran Pirámide es la única de las 7 Maravillas del Mundo Antiguo que sigue en pie.",
+    "ruta_imagen": "piramides_giza",
+    "pais": "Egipto"
+  },
+  {
+    "titulo": "Templos de Abu Simbel",
+    "descripcion": "Dos enormes templos excavados en la roca por orden de Ramsés II, famosos por haber sido trasladados pieza por pieza para salvarlos de una inundación.",
+    "ruta_imagen": "templos_abu_simbel",
+    "pais": "Egipto"
+  },
+  {
+    "titulo": "Ópera de Sídney",
+    "descripcion": "Obra maestra de la arquitectura del siglo XX, famosa por su diseño expresionista con una serie de grandes 'conchas' prefabricadas.",
+    "ruta_imagen": "opera_sydney",
+    "pais": "Australia"
+  }
+]

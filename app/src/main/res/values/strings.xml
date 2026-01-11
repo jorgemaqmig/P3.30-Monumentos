@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Monumentos</string>
+    <string name="settings">Ajustes</string>
+    <string name="close">Cerrar</string>
+    <string name="appearance">Apariencia</string>
+    <string name="system">Sistema</string>
+    <string name="light">Claro</string>
+    <string name="dark">Oscuro</string>
+    <string name="sort_list">Ordenar lista</string>
+    <string name="sort_az">Nombre (A-Z)</string>
+    <string name="sort_za">Nombre (Z-A)</string>
+    <string name="sort_country">Por País</string>
+    <string name="image_not_found">Imagen no encontrada</string>
+    <string name="error_loading">Error al cargar los datos</string>
+    <string name="menu_open_desc">Abrir menú lateral</string>
+    
+    <string name="language">Idioma</string>
+    <string name="language_system">Sistema</string>
+    <string name="language_es">Español</string>
+    <string name="language_en">Inglés</string>
+    <string name="language_fr">Francés</string>
+    <string name="language_pt">Portugués</string>
+    <string name="language_it">Italiano</string>
+
+    <string name="monument_lang_title">Idioma</string>
+    <string name="translating">Traduciendo...</string>
+</resources>
