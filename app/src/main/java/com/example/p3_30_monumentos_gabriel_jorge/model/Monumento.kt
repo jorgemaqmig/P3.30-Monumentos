@@ -1,3 +1,5 @@
+// Jorge Maqueda Miguel y Gabriel Almarcha Martínez
+
 package com.example.p3_30_monumentos_gabriel_jorge.model
 
 data class Monumento(
