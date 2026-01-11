@@ -166,7 +166,12 @@ fun MonumentosApp(viewModel: MonumentosViewModel = viewModel()) {
                                         )
                                         IconButton(
                                                 onClick = { scope.launch { drawerState.close() } }
-                                        ) { Icon(Icons.Filled.Close, dynamicString(R.string.close, uiStringsMap)) }
+                                        ) {
+                                            Icon(
+                                                    Icons.Filled.Close,
+                                                    dynamicString(R.string.close, uiStringsMap)
+                                            )
+                                        }
                                     }
                                     HorizontalDivider(Modifier.padding(vertical = 16.dp))
 
@@ -193,26 +198,34 @@ fun MonumentosApp(viewModel: MonumentosViewModel = viewModel()) {
                                             style = MaterialTheme.typography.titleMedium,
                                             fontWeight = FontWeight.Bold
                                     )
-                                    SortOptionRow(dynamicString(R.string.sort_az, uiStringsMap), "ASC", ordenActual) {
-                                        ordenActual = it
-                                    }
-                                    SortOptionRow(dynamicString(R.string.sort_za, uiStringsMap), "DESC", ordenActual) {
-                                        ordenActual = it
-                                    }
-                                    SortOptionRow(dynamicString(R.string.sort_country, uiStringsMap), "PAIS", ordenActual) {
-                                        ordenActual = it
-                                    }
+                                    SortOptionRow(
+                                            dynamicString(R.string.sort_az, uiStringsMap),
+                                            "ASC",
+                                            ordenActual
+                                    ) { ordenActual = it }
+                                    SortOptionRow(
+                                            dynamicString(R.string.sort_za, uiStringsMap),
+                                            "DESC",
+                                            ordenActual
+                                    ) { ordenActual = it }
+                                    SortOptionRow(
+                                            dynamicString(R.string.sort_country, uiStringsMap),
+                                            "PAIS",
+                                            ordenActual
+                                    ) { ordenActual = it }
 
                                     HorizontalDivider(Modifier.padding(vertical = 16.dp))
 
                                     Text(
-                                            dynamicString(R.string.monument_lang_title, uiStringsMap),
+                                            dynamicString(
+                                                    R.string.monument_lang_title,
+                                                    uiStringsMap
+                                            ),
                                             style = MaterialTheme.typography.titleMedium,
                                             fontWeight = FontWeight.Bold,
                                             modifier = Modifier.padding(bottom = 8.dp)
                                     )
                                     LanguageDropdown(currentLanguageMode, uiStringsMap) {
-                                        currentLanguageMode = it
                                         viewModel.updateLanguage(it)
                                     }
                                     Spacer(Modifier.height(16.dp))
@@ -227,7 +240,12 @@ fun MonumentosApp(viewModel: MonumentosViewModel = viewModel()) {
                                 TopAppBar(
                                         title = {
                                             Text(
-                                                    text = dynamicString(R.string.app_name, uiStringsMap).uppercase(),
+                                                    text =
+                                                            dynamicString(
+                                                                            R.string.app_name,
+                                                                            uiStringsMap
+                                                                    )
+                                                                    .uppercase(),
                                                     fontFamily = SoraFontFamily,
                                                     style = MaterialTheme.typography.headlineMedium,
                                                     fontWeight = FontWeight.Bold
@@ -241,7 +259,11 @@ fun MonumentosApp(viewModel: MonumentosViewModel = viewModel()) {
                                             ) {
                                                 Icon(
                                                         imageVector = Icons.Filled.Menu,
-                                                        contentDescription = dynamicString(R.string.menu_open_desc, uiStringsMap)
+                                                        contentDescription =
+                                                                dynamicString(
+                                                                        R.string.menu_open_desc,
+                                                                        uiStringsMap
+                                                                )
                                                 )
                                             }
                                         }
@@ -331,7 +353,8 @@ fun LanguageDropdown(
             )
     var expanded by remember { mutableStateOf(false) }
     val selectedText =
-            languages.find { it.first == currentLanguage }?.second ?: dynamicString(R.string.language_system, uiStringsMap)
+            languages.find { it.first == currentLanguage }?.second
+                    ?: dynamicString(R.string.language_system, uiStringsMap)
 
     ExposedDropdownMenuBox(
             expanded = expanded,
@@ -438,7 +461,10 @@ fun MonumentoCard(
                     )
                 }
             } else {
-                Text(text = dynamicString(R.string.image_not_found, uiStringsMap), modifier = Modifier.padding(8.dp))
+                Text(
+                        text = dynamicString(R.string.image_not_found, uiStringsMap),
+                        modifier = Modifier.padding(8.dp)
+                )
             }
 
             if (expanded) {

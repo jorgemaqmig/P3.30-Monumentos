@@ -51,17 +51,37 @@ class MonumentosViewModel(application: Application) : AndroidViewModel(applicati
         private val _uiStrings = MutableStateFlow<Map<Int, String>>(emptyMap())
         val uiStrings: StateFlow<Map<Int, String>> = _uiStrings.asStateFlow()
 
+        private val _currentLanguage = MutableStateFlow("SYSTEM")
+        val currentLanguage: StateFlow<String> = _currentLanguage.asStateFlow()
+
         init {
-                loadAndTranslateMonuments()
+                // Cargar idioma guardado al iniciar
+                val prefs =
+                        application.getSharedPreferences(
+                                "app_settings",
+                                android.content.Context.MODE_PRIVATE
+                        )
+                val savedLanguage = prefs.getString("language_mode", "SYSTEM") ?: "SYSTEM"
+                _currentLanguage.value = savedLanguage
+                loadAndTranslateMonuments(savedLanguage)
         }
 
-        // Actualiza el idioma de traducción
+        // Actualiza el idioma de traducción y lo guarda
         fun updateLanguage(languageMode: String) {
+                val prefs =
+                        getApplication<Application>()
+                                .getSharedPreferences(
+                                        "app_settings",
+                                        android.content.Context.MODE_PRIVATE
+                                )
+                prefs.edit().putString("language_mode", languageMode).apply()
+
+                _currentLanguage.value = languageMode
                 loadAndTranslateMonuments(languageMode)
         }
 
         // Carga y traduce los datos de los monumentos
-        private fun loadAndTranslateMonuments(languageMode: String = "SYSTEM") {
+        private fun loadAndTranslateMonuments(languageMode: String) {
                 viewModelScope.launch {
                         _uiState.value = UiState.Loading(0f)
 
@@ -139,9 +159,7 @@ class MonumentosViewModel(application: Application) : AndroidViewModel(applicati
                                         val translatedText =
                                                 translator.translate(originalText).await()
                                         newUiStringsMap[id] = translatedText
-                                } catch (e: Exception) {
-
-                                }
+                                } catch (e: Exception) {}
                         }
 
                         _uiStrings.value = newUiStringsMap
